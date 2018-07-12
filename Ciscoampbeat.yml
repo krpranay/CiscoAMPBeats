@@ -1,0 +1,20 @@
+################### Gsbeat Configuration Example #########################
+
+############################# Gsbeat ######################################
+
+gsbeat:
+  # Defines how often an event is sent to the output
+  period: 1s
+  api_client_ID : "f6cab9156394e0bc768b"
+  api_Key : "1fcd292c-2059-4235-8f76-62d1a6cf9db3"
+
+output:
+  console:
+    pretty: true
+    
+output:
+  file:
+    path: "D:\\projects\\Go_WorkSpace\\src\\github.com\\krpranay\\ciscoampbeat\\amp"
+    filename: cicsoampbeat.txt
+    rotate_every_kb: 1000
+    number_of_files: 7
