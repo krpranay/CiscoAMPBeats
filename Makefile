@@ -1,5 +1,5 @@
-BEAT_NAME=ciscoampbeat
-BEAT_PATH=github.com/krpranay/ciscoampbeat
+BEAT_NAME=CiscoAMPBeats
+BEAT_PATH=CiscoAMPBeats
 BEAT_GOPATH=${GOPATH}
 SYSTEM_TESTS=false
 TEST_ENVIRONMENT=false
@@ -36,7 +36,7 @@ git-init:
 	git commit -m "Add git settings"
 	git add .
 	git reset -- .travis.yml
-	git commit -m "Add ciscoampbeat"
+	git commit -m "Add CiscoAMPBeats"
 	git add .travis.yml
 	git commit -m "Add Travis CI"
 

@@ -1,5 +1,5 @@
-- key: ciscoampbeat
-  title: ciscoampbeat
+- key: CiscoAMPBeats
+  title: CiscoAMPBeats
   description:
   fields:
     - name: counter

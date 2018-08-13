@@ -3,7 +3,7 @@
 Welcome to Ciscoampbeat.
 
 Ensure that this folder is at the following location:
-`${GOPATH}/src/github.com/krpranay/ciscoampbeat`
+`${GOPATH}/src/ciscoampbeat`
 
 ## Getting Started with Ciscoampbeat
 
@@ -98,8 +98,8 @@ make clean
 To clone Ciscoampbeat from the git repository, run the following commands:
 
 ```
-mkdir -p ${GOPATH}/src/github.com/krpranay/ciscoampbeat
-git clone https://github.com/krpranay/ciscoampbeat ${GOPATH}/src/github.com/krpranay/ciscoampbeat
+mkdir -p ${GOPATH}/src/ciscoampbeat
+git clone https://github.com/krpranay/ciscoampbeat ${GOPATH}/src/ciscoampbeat
 ```
 
 

@@ -2,6 +2,6 @@
 /build
 
 .DS_Store
-/ciscoampbeat
-/ciscoampbeat.test
+/CiscoAMPBeats
+/CiscoAMPBeats.test
 *.pyc

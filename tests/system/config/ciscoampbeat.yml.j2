@@ -18,8 +18,8 @@ output:
 
 
     # Name of the generated files. The default is `ciscoampbeat` and it generates
-    # files: `ciscoampbeat`, `ciscoampbeat.1`, `ciscoampbeat.2`, etc.
-    filename: {{ output_file_filename|default("ciscoampbeat") }}
+    # files: `CiscoAMPBeats`, `CiscoAMPBeats.1`, `CiscoAMPBeats.2`, etc.
+    filename: {{ output_file_filename|default("CiscoAMPBeats") }}
 
     # Maximum size in kilobytes of each file. When this size is reached, the files are
     # rotated. The default value is 10 MB.
@@ -65,10 +65,10 @@ output:
 
   #files:
     # The directory where the log files will written to.
-    #path: /var/log/ciscoampbeat
+    #path: /var/log/CiscoAMPBeats
 
     # The name of the files where the logs are written to.
-    #name: ciscoampbeat
+    #name: CiscoAMPBeats
 
     # Configure log file size limit. If limit is reached, log file will be
     # automatically rotated

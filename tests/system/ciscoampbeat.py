@@ -8,6 +8,6 @@ class BaseTest(TestCase):
 
     @classmethod
     def setUpClass(self):
-        self.beat_name = "ciscoampbeat"
+        self.beat_name = "CiscoAMPBeats"
         self.beat_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
         super(BaseTest, self).setUpClass()

@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/krpranay/ciscoampbeat/cmd"
+	"github.com/CiscoAMPBeats/cmd"
 )
 
 func main() {

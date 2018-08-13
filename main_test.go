@@ -1,12 +1,12 @@
 package main
 
-// This file is mandatory as otherwise the ciscoampbeat.test binary is not generated correctly.
+// This file is mandatory as otherwise the CiscoAMPBeats.test binary is not generated correctly.
 
 import (
 	"flag"
 	"testing"
 
-	"github.com/krpranay/ciscoampbeat/cmd"
+	"CiscoAMPBeats/cmd"
 )
 
 var systemTest *bool
