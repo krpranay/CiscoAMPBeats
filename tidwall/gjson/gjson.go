@@ -14,7 +14,7 @@ import (
 	"unicode/utf16"
 	"unicode/utf8"
 
-	"github.com/tidwall/match"
+	"github.com/CiscoAMPBeats/tidwall/match"
 )
 
 // Type is Result type
