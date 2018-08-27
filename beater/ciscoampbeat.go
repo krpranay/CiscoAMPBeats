@@ -2,6 +2,7 @@ package beater
 
 import (
 	"bufio"
+	"encoding/json"
 	"fmt"
 	"os"
 	"strings"
@@ -51,6 +52,12 @@ func (bt *Ciscoampbeat) Run(b *beat.Beat) error {
 
 	// Reading INI file
 	iniFile, err1 := config.ReadINIFile(bt.config.INIPath)
+	jsonStr := iniFile["sample"]
+
+	personMap := make(map[string]interface{})
+
+	json.Unmarshal([]byte(jsonStr), &personMap)
+
 	if err1 == nil {
 
 		// Creating position file
@@ -77,7 +84,8 @@ func (bt *Ciscoampbeat) Run(b *beat.Beat) error {
 
 		// Creating API request URL
 
-		url = createRequestURL(config.EventTypes, iniFile)
+		//url = createRequestURL(config.EventTypes, iniFile)
+		url = createRequestURL(iniFile)
 
 		var err error
 		bt.client, err = b.Publisher.Connect()

@@ -9,7 +9,7 @@ gsbeat:
   api_Key : "1fcd292c-2059-4235-8f76-62d1a6cf9db3"
   inipath : "CicsoAMPEndPoint.ini"
   posfilepath : "CiscoAMPEndPoint.pos"
-
+   
 output:
   console:
     pretty: true

@@ -106,10 +106,13 @@ func replaceAtIndex(str string, substr string, index int) string {
 }
 
 // function to create request URL
-func createRequestURL(eventTypes map[string]int, file map[string]string) string {
+//func createRequestURL(eventTypes map[string]int, file map[string]string) string {
+func createRequestURL(file map[string]string) string {
 
 	offsetPosition := file["offsetValue"]
 	datetimeValue := file["dtValue"]
+	const urlHeader string = "https://"
+	const event string = "events"
 
 	if offsetPosition != "" && datetimeValue != "" {
 	}
@@ -117,10 +120,11 @@ func createRequestURL(eventTypes map[string]int, file map[string]string) string 
 	var apiURL = ""
 
 	// check if url address exists
-	if file["urirequests"] != "" {
-		apiURL = file["urirequests"]
+	if file["uriaddress"] != "" {
+		apiURL = urlHeader + file["uriaddress"] + file["version"] + "/" + event
 	} else {
-		apiURL = "https://api.amp.cisco.com/v1/events"
+		//apiURL = "https://api.amp.cisco.com/v1/events"
+		fmt.Println("URI address is not available in INI file ", file)
 	}
 
 	// if startdate is availabe append it in URL
@@ -156,8 +160,8 @@ func createRequestURL(eventTypes map[string]int, file map[string]string) string 
 
 		var allEvents = strings.Split(file["eventtypes"], ",")
 		for i := 0; i < len(allEvents); i++ {
-			keyValue := eventTypes[allEvents[i]]
-			apiURL = apiURL + "event_type=" + strconv.Itoa(keyValue) + "&"
+			keyValue := allEvents[i]
+			apiURL = apiURL + "event_type=" + keyValue + "&"
 		}
 	}
 
