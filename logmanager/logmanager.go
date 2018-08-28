@@ -18,6 +18,6 @@ const (
 
 // Log function to log error
 func Log(errorType string, customError string, exMessage Error) {
-	fmt.Println(errorType+" : ", customError+" - "+"%v", exMessage)
+	fmt.Println(errorType+" : ", customError, exMessage.Error())
 
 }

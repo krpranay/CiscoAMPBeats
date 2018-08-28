@@ -124,7 +124,7 @@ func createRequestURL(file map[string]string) string {
 		apiURL = urlHeader + file["uriaddress"] + file["version"] + "/" + event
 	} else {
 		//apiURL = "https://api.amp.cisco.com/v1/events"
-		fmt.Println("URI address is not available in INI file ", file)
+		fmt.Println("URI address is not available in INI file ")
 	}
 
 	// if startdate is availabe append it in URL
